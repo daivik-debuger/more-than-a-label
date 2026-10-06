@@ -33,8 +33,9 @@ h3{font-size:1.45rem;margin:0 0 12px}
 .button.ghost{background:transparent;border-color:#fff;color:#fff;box-shadow:4px 4px 0 rgba(255,255,255,.5)}
 .button.ghost:hover{box-shadow:2px 2px 0 rgba(255,255,255,.5)}
 .hero-art{position:relative;justify-self:center;width:min(330px,100%);transform:rotate(4deg)}
+.hero-art{text-decoration:none}
 .hero-art:before{content:'';position:absolute;inset:15px -16px -18px 16px;background:var(--yellow);border:3px solid var(--ink)}
-.hero-art img{display:block;position:relative;width:100%;aspect-ratio:542/964;object-fit:cover;object-position:top;background:#fff;border:3px solid var(--ink);box-shadow:7px 7px 0 #0a2f6f}
+.hero-art img{display:block;position:relative;width:100%;height:auto;aspect-ratio:940/1674;object-fit:contain;background:#fff;border:3px solid var(--ink);box-shadow:7px 7px 0 #0a2f6f}
 .art-note{position:absolute;z-index:2;left:-36px;bottom:26px;background:#fff;color:var(--ink);border:2px solid var(--ink);padding:7px 13px;font-weight:700;font-size:13px;transform:rotate(-7deg)}
 .section{padding:82px 0}
 .section.alt{background:#fff}
@@ -75,19 +76,29 @@ h3{font-size:1.45rem;margin:0 0 12px}
 .poem-card .poem-num{background:var(--yellow);border-right:2px solid var(--ink);display:grid;place-items:center;font-family:'Space Grotesk';font-size:2rem;font-weight:700}
 .poem-card .poem-body{padding:25px 30px}
 .poem-card .poem-body p:last-child{margin-bottom:0}
-.cover-layout{display:grid;grid-template-columns:minmax(260px,430px) minmax(250px,1fr);gap:62px;align-items:center;padding:72px 0 82px}
-.cover-art{margin:0;max-width:430px}
-.cover-art img{display:block;width:100%;height:auto;border:3px solid var(--ink);box-shadow:9px 9px 0 var(--yellow)}
-.cover-art figcaption{font-size:13px;color:var(--muted);margin-top:20px}
-.cover-intro{max-width:550px}
-.cover-intro p{font-size:1.08rem}
-.cover-intro .button{margin:10px 0 18px}
-.strip-heading{border-top:2px solid var(--line);padding-top:62px}
-.strip-heading h2{margin-bottom:0}
-.comic-layout{display:grid;grid-template-columns:minmax(280px,500px) minmax(250px,1fr);gap:52px;align-items:start}
-.comic-frame{background:#fff;padding:18px;border:3px solid var(--ink);box-shadow:8px 8px 0 var(--yellow)}
-.comic-frame img{display:block;width:100%;height:auto}
-.comic-caption{font-size:13px;color:var(--muted);margin-top:17px}
+.comic-promo{background:#e8effa;border-top:1px solid var(--line);padding:45px 0}
+.comic-promo-inner{display:grid;grid-template-columns:150px 1fr;gap:36px;align-items:center;max-width:900px}
+.comic-promo-cover img{display:block;width:100%;height:auto;border:2px solid var(--ink);box-shadow:5px 5px 0 var(--yellow)}
+.comic-promo h2{font-size:clamp(1.8rem,3vw,2.7rem);margin:8px 0 10px}
+.comic-promo p{margin-bottom:18px}
+.reader-section{padding:70px 0 80px}
+.reader-intro{max-width:760px;margin-bottom:32px}
+.reader-intro p{font-size:1.08rem;color:var(--muted)}
+.reader-layout{display:grid;grid-template-columns:minmax(280px,500px) minmax(250px,1fr);gap:55px;align-items:start}
+.reader-controls{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:16px}
+.reader-controls-bottom{margin:19px 0 0}
+.reader-button{border:2px solid var(--ink);background:var(--yellow);color:var(--ink);border-radius:3px;padding:9px 12px;font:700 14px 'DM Sans',Arial,sans-serif;cursor:pointer}
+.reader-button:hover:not(:disabled){background:#ffe984}
+.reader-button:disabled{background:#e7e7e7;border-color:#a7adb7;color:#626b77;cursor:default}
+.reader-count{font-size:13px;font-weight:700;text-align:center}
+.reader-frame{margin:0;background:#fff;border:3px solid var(--ink);padding:12px;box-shadow:8px 8px 0 var(--yellow)}
+.reader-frame img{display:block;width:100%;height:auto}
+.reader-frame figcaption{font-size:13px;color:var(--muted);margin-top:12px}
+.reader-side{padding-top:38px}
+.reader-side p{margin:0 0 23px}
+.panel-guide{border-top:2px solid var(--line);padding:60px 0 90px}
+.panel-guide>p{max-width:710px}
+.panel-guide .transcript{max-width:800px}
 .transcript{background:#fff;border:1px solid var(--line);padding:25px}
 .transcript ol{padding-left:20px}
 .transcript li{margin:0 0 15px}
@@ -95,6 +106,6 @@ h3{font-size:1.45rem;margin:0 0 12px}
 .step{background:#fff;border-left:5px solid var(--blue);padding:20px 23px}
 .step h3{font-size:1.16rem;margin-bottom:5px}
 .step p{margin:0}
-@media(max-width:790px){.header-inner{align-items:flex-start;flex-direction:column;padding:17px 0;gap:14px}.nav{gap:1px}.nav a{font-size:12px;padding:7px 9px}.hero-inner{grid-template-columns:1fr;padding:50px 0}.hero-art{width:240px;margin:24px 0 0}.art-note{left:-12px}.grid-3{grid-template-columns:1fr}.cover-layout{grid-template-columns:1fr;gap:32px;padding:55px 0}.cover-art{width:min(430px,100%);margin:auto}.comic-layout{grid-template-columns:1fr}.comic-frame{max-width:520px;margin:auto}.section{padding:62px 0}.poem-card{grid-template-columns:70px 1fr}.poem-card .poem-body{padding:20px}.stat-card{grid-template-columns:1fr;gap:4px}}
-@media(max-width:440px){.shell{width:min(100% - 28px,1160px)}.nav a{font-size:11px;padding:6px 7px}.brand{font-size:16px}.hero-inner{padding:40px 0}.hero-art{width:190px}.page-hero{padding:45px 0}.content{padding:48px 0 70px}.poem-card{display:block}.poem-card .poem-num{border-right:0;border-bottom:2px solid var(--ink);justify-content:start;padding:6px 18px}.card{padding:22px}}
+@media(max-width:790px){.header-inner{align-items:flex-start;flex-direction:column;padding:17px 0;gap:14px}.nav{gap:1px}.nav a{font-size:12px;padding:7px 9px}.hero-inner{grid-template-columns:1fr;padding:50px 0}.hero-art{width:240px;margin:24px 0 0}.art-note{left:-12px}.grid-3{grid-template-columns:1fr}.reader-layout{grid-template-columns:1fr}.reader-book{max-width:500px}.reader-side{padding-top:5px}.section{padding:62px 0}.poem-card{grid-template-columns:70px 1fr}.poem-card .poem-body{padding:20px}.stat-card{grid-template-columns:1fr;gap:4px}}
+@media(max-width:440px){.shell{width:min(100% - 28px,1160px)}.nav a{font-size:11px;padding:6px 7px}.brand{font-size:16px}.hero-inner{padding:40px 0}.hero-art{width:190px}.page-hero{padding:45px 0}.content{padding:48px 0 70px}.comic-promo-inner{grid-template-columns:105px 1fr;gap:20px}.comic-promo h2{font-size:1.55rem}.comic-promo p{font-size:14px}.comic-promo .button{font-size:12px;padding:9px}.reader-section{padding:48px 0}.reader-controls{flex-wrap:wrap}.reader-count{order:-1;flex-basis:100%}.reader-button{flex:1}.poem-card{display:block}.poem-card .poem-num{border-right:0;border-bottom:2px solid var(--ink);justify-content:start;padding:6px 18px}.card{padding:22px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
