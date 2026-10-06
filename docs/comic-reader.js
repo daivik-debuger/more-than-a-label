@@ -21,7 +21,7 @@ if (reader) {
       width: 542,
       height: 964,
       alt: 'Color comic showing a young person facing a judge and limited choices, contrasted with a white boy offered the American Dream. The final panel says: I see you.',
-      caption: 'Comic strip: Because where I come from...',
+      caption: 'The comic strip',
       count: 'Comic strip · Page 2 of 2',
     },
   ];
