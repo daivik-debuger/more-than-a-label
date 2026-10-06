@@ -34,7 +34,7 @@ h3{font-size:1.45rem;margin:0 0 12px}
 .button.ghost:hover{box-shadow:2px 2px 0 rgba(255,255,255,.5)}
 .hero-art{position:relative;justify-self:center;width:min(330px,100%);transform:rotate(4deg)}
 .hero-art:before{content:'';position:absolute;inset:15px -16px -18px 16px;background:var(--yellow);border:3px solid var(--ink)}
-.hero-art img{display:block;position:relative;width:100%;aspect-ratio:432/768;object-fit:cover;object-position:top;background:#fff;border:3px solid var(--ink);box-shadow:7px 7px 0 #0a2f6f}
+.hero-art img{display:block;position:relative;width:100%;aspect-ratio:542/964;object-fit:cover;object-position:top;background:#fff;border:3px solid var(--ink);box-shadow:7px 7px 0 #0a2f6f}
 .art-note{position:absolute;z-index:2;left:-36px;bottom:26px;background:#fff;color:var(--ink);border:2px solid var(--ink);padding:7px 13px;font-weight:700;font-size:13px;transform:rotate(-7deg)}
 .section{padding:82px 0}
 .section.alt{background:#fff}
