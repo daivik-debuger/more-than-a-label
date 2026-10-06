@@ -75,6 +75,15 @@ h3{font-size:1.45rem;margin:0 0 12px}
 .poem-card .poem-num{background:var(--yellow);border-right:2px solid var(--ink);display:grid;place-items:center;font-family:'Space Grotesk';font-size:2rem;font-weight:700}
 .poem-card .poem-body{padding:25px 30px}
 .poem-card .poem-body p:last-child{margin-bottom:0}
+.cover-layout{display:grid;grid-template-columns:minmax(260px,430px) minmax(250px,1fr);gap:62px;align-items:center;padding:72px 0 82px}
+.cover-art{margin:0;max-width:430px}
+.cover-art img{display:block;width:100%;height:auto;border:3px solid var(--ink);box-shadow:9px 9px 0 var(--yellow)}
+.cover-art figcaption{font-size:13px;color:var(--muted);margin-top:20px}
+.cover-intro{max-width:550px}
+.cover-intro p{font-size:1.08rem}
+.cover-intro .button{margin:10px 0 18px}
+.strip-heading{border-top:2px solid var(--line);padding-top:62px}
+.strip-heading h2{margin-bottom:0}
 .comic-layout{display:grid;grid-template-columns:minmax(280px,500px) minmax(250px,1fr);gap:52px;align-items:start}
 .comic-frame{background:#fff;padding:18px;border:3px solid var(--ink);box-shadow:8px 8px 0 var(--yellow)}
 .comic-frame img{display:block;width:100%;height:auto}
@@ -86,6 +95,6 @@ h3{font-size:1.45rem;margin:0 0 12px}
 .step{background:#fff;border-left:5px solid var(--blue);padding:20px 23px}
 .step h3{font-size:1.16rem;margin-bottom:5px}
 .step p{margin:0}
-@media(max-width:790px){.header-inner{align-items:flex-start;flex-direction:column;padding:17px 0;gap:14px}.nav{gap:1px}.nav a{font-size:12px;padding:7px 9px}.hero-inner{grid-template-columns:1fr;padding:50px 0}.hero-art{width:240px;margin:24px 0 0}.art-note{left:-12px}.grid-3{grid-template-columns:1fr}.comic-layout{grid-template-columns:1fr}.comic-frame{max-width:520px;margin:auto}.section{padding:62px 0}.poem-card{grid-template-columns:70px 1fr}.poem-card .poem-body{padding:20px}.stat-card{grid-template-columns:1fr;gap:4px}}
+@media(max-width:790px){.header-inner{align-items:flex-start;flex-direction:column;padding:17px 0;gap:14px}.nav{gap:1px}.nav a{font-size:12px;padding:7px 9px}.hero-inner{grid-template-columns:1fr;padding:50px 0}.hero-art{width:240px;margin:24px 0 0}.art-note{left:-12px}.grid-3{grid-template-columns:1fr}.cover-layout{grid-template-columns:1fr;gap:32px;padding:55px 0}.cover-art{width:min(430px,100%);margin:auto}.comic-layout{grid-template-columns:1fr}.comic-frame{max-width:520px;margin:auto}.section{padding:62px 0}.poem-card{grid-template-columns:70px 1fr}.poem-card .poem-body{padding:20px}.stat-card{grid-template-columns:1fr;gap:4px}}
 @media(max-width:440px){.shell{width:min(100% - 28px,1160px)}.nav a{font-size:11px;padding:6px 7px}.brand{font-size:16px}.hero-inner{padding:40px 0}.hero-art{width:190px}.page-hero{padding:45px 0}.content{padding:48px 0 70px}.poem-card{display:block}.poem-card .poem-num{border-right:0;border-bottom:2px solid var(--ink);justify-content:start;padding:6px 18px}.card{padding:22px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
